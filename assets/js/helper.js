@@ -1,6 +1,6 @@
 class HelperClass {
 
-    static urlApi = "https://localhost:7125/api";
+    static urlApi = "https://carlospapa-001-site1.etempurl.com/api";
 
     static MostrarToastSucesso(mensagem, timeout, callback) {
 
