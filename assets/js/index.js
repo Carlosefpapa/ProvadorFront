@@ -171,7 +171,7 @@ function BuscarFavoritos() {
 
 function RemoverFavorito() {
 
-
+  $(document).on('click', '.favorito', function () {
   var token = localStorage.getItem('token');
 
   if (!token) {
@@ -186,7 +186,7 @@ function RemoverFavorito() {
 
   HelperClass.ExibirPreloader();
 
-  $(document).on('click', '.favorito', function () {
+ 
 
     var favoritoIndex = $(this).data('favorito-id');
 
