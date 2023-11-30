@@ -11,7 +11,7 @@ function BuscarInformacoesUsuario() {
         var mensagem = `Faça login e tente novamente`;
         var timeout = 2000;
         HelperClass.MostrarToastErro(mensagem, timeout, (() => {
-            window.location.href = "../index.html";
+            window.location.href = "../../index.html";
         }))
     }
 
