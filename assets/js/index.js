@@ -82,7 +82,7 @@ function CarregarProdutos() {
 
   $.each(instanciaAtualProdutos, (index, produtos) => {
 
-    $('#produtos').append(`<a href=https://api.whatsapp.com/send?phone=5531989659257&text=Ola,+tenho+interesse+no+produto:+${produtos.nome}!><div class="">
+    $('#produtos').append(`<a target='_BLANK' href=https://api.whatsapp.com/send?phone=5531989659257&text=Ola,+tenho+interesse+no+produto:+${produtos.nome}!><div class="">
         <div class="showcase-banner">
           <img src="assets/${produtos.imagem}" alt="Produto" width="300"class="product-img default">
         </div>
