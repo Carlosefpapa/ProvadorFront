@@ -82,21 +82,21 @@ function CarregarProdutos() {
 
   $.each(instanciaAtualProdutos, (index, produtos) => {
 
-    $('#produtos').append(`<a target='_BLANK' href=https://api.whatsapp.com/send?phone=5531989659257&text=Ola,+tenho+interesse+no+produto:+${produtos.nome}!><div class="">
-        <div class="showcase-banner">
-          <img src="assets/${produtos.imagem}" alt="Produto" width="300"class="product-img default">
-        </div>
+    $('#produtos').append(`<a target='_BLANK' href="https://api.whatsapp.com/send?phone=5531989659257&text=Ola,+tenho+interesse+no+produto:+${produtos.nome}!"><div class="">
+    <div class="showcase-banner">
+      <img src="assets/${produtos.imagem}" alt="Produto" width="300"class="product-img default">
+    </div>
 
-        <div class="showcase-content">
+    <div class="showcase-content">
 
-          <a href="#" class="showcase-category">${produtos.nome}</a>
+      <a href="#" class="showcase-category">${produtos.nome}</a>
 
-          <a href="#">
-            <h3 class="showcase-title">${produtos.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</h3>
-          </a>
+      <a href="#">
+        <h3 class="showcase-title">${produtos.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</h3>
+      </a>
 
-        </div>
-      </div></a>`);
+    </div>
+  </div></a>`);
   })
 }
 
