@@ -8,7 +8,7 @@ function BuscarInformacoesUsuario() {
     var token = localStorage.getItem('token');
 
     if (!token) {
-        var mensagem = `${jqXHR.status} - Faça login e tente novamente`;
+        var mensagem = `Faça login e tente novamente`;
         var timeout = 2000;
         HelperClass.MostrarToastErro(mensagem, timeout, (() => {
             window.location.href = "../index.html";
